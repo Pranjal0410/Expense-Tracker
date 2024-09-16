@@ -1,0 +1,106 @@
+
+body {
+    background-color: #1c1b29; 
+    color: #f1f1f1; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: #2e2d3d; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7); 
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+h2, h3 {
+    color: #d8b4ff; 
+    margin-bottom: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="number"], select {
+    background-color: #3a3a4f; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f1f1f1;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+input[type="submit"] {
+    background-color: #7d4cc2; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Outer shadow */
+}
+
+input[type="submit"]:hover {
+    background-color: #9a6fed; /* Lighter purple on hover */
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #52476b; /* Dark purple */
+    color: #f1f1f1;
+}
+
+td {
+    background-color: #403d59; /* Deep violet */
+    color: #f1f1f1;
+    border-bottom: 1px solid #52476b;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive Adjustments */
+@media(max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="number"], select {
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+    }
+
+    th, td {
+        padding: 10px 8px;
+    }
+}
